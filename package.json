@@ -1,22 +1,26 @@
 {
   "name": "duo-cache",
   "version": "1.0.0",
-  "description": "",
+  "description": "DuoCache is a module providing two level (in-memory and persistence) cache for saving resources like network connections, database quering, etc., meanwhile it keeps away the risks of loosing in-memory data(e.g. application reload) by utilizing a persistent storage.",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
+    "compile": "tsc --build tsconfig.esm5.json && tsc --build tsconfig.esm.json && tsc --build tsconfig.cjs.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RobbieL-nlp/duo-cache.git"
   },
-  "author": "RobbieL-nlp",
+  "author": "Robbie Liu <https://github.com/RobbieL-nlp>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/RobbieL-nlp/duo-cache/issues"
   },
-  "homepage": "https://github.com/RobbieL-nlp/duo-cache#readme"
+  "homepage": "https://github.com/RobbieL-nlp/duo-cache#readme",
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
 }

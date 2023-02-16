@@ -24,7 +24,7 @@ export interface FetchAgent<T>{
 }
 
 export interface Indicator{
-    (data?:unknown):Promise<string> | string
+    (data?:unknown, ...args:unknown[]):Promise<string> | string
 }
 
 export interface StockConfig<T> {
