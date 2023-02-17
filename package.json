@@ -1,13 +1,16 @@
 {
-  "name": "duo-cache",
-  "version": "1.0.0",
-  "description": "DuoCache is a module providing two level (in-memory and persistence) cache for saving resources like network connections, database quering, etc., meanwhile it keeps away the risks of loosing in-memory data(e.g. application reload) by utilizing a persistent storage.",
-  "main": "index.js",
+  "name": "@sota_/duocache",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm5/index.js",
+  "es2015": "./dist/esm/index.js",
+  "types": "index.d.ts",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "compile": "tsc --build tsconfig.esm5.json && tsc --build tsconfig.esm.json && tsc --build tsconfig.cjs.json",
+    "compile": "tsc --b ./settings/tsconfig.esm5.json ./settings/tsconfig.esm.json ./settings/tsconfig.cjs.json ./settings/tsconfig.types.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,5 +25,22 @@
   "homepage": "https://github.com/RobbieL-nlp/duo-cache#readme",
   "devDependencies": {
     "typescript": "^4.9.5"
-  }
+  },
+  "keywords": [
+    "cache",
+    "ES6",
+    "ES2015"
+  ],
+  "files": [
+    "dist/cjs/**/!(*.tsbuildinfo)",
+    "dist/esm/**/!(*.tsbuildinfo)",
+    "dist/esm5/**/!(*.tsbuildinfo)",
+    "dist/types/**/!(*.tsbuildinfo)",
+    "CHANGELOG.md",
+    "LICENSE.txt",
+    "package.json",
+    "README.md",
+    "tsconfig.json"
+  ],
+  "dependencies": {}
 }

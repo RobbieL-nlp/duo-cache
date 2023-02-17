@@ -5,7 +5,7 @@ DuoCache is a module providing two level (in-memory and persistence) cache for s
 ## Install
 
 ```bash
-npm install duocache
+npm i @sota_/duocache
 ```
 
 ## Overview
